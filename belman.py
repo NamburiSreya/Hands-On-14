@@ -86,3 +86,23 @@ if __name__ == "__main__":
                 current = current.parent
             path.reverse()
             print(f"To {v.label}: Distance = {v.distance}, Path = {' -> '.join(path)}")
+
+#output
+
+#--- Adjacent Vertices ---
+0: 1 3
+1: 2 3 4
+2: 1
+3: 2 4
+4: 0 2
+#--- End of Adjacent Vertices ---
+
+#Number of edges: 10
+#No negative-weight cycle:
+
+#Shortest paths from vertex 0:
+#To 0: Distance = 0, Path = 0
+#To 1: Distance = 2, Path = 0 -> 3 -> 2 -> 1
+#To 2: Distance = 4, Path = 0 -> 3 -> 2
+#To 3: Distance = 7, Path = 0 -> 3
+#To 4: Distance = -2, Path = 0 -> 3 -> 2 -> 1 -> 4
