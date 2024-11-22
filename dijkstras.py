@@ -99,3 +99,12 @@ if __name__ == "__main__":
     for vertex in shortest_paths:
         path = reconstruct_path(vertex)
         print(f"  {vertex.label}    | {vertex.cost:4} | {' -> '.join(map(str, path))}")
+
+#output
+Vertex | Cost | Path
+---------------------
+  0    |    0 | 0
+  3    |    5 | 0 -> 3
+  4    |    7 | 0 -> 3 -> 4
+  1    |    8 | 0 -> 3 -> 1
+  2    |    9 | 0 -> 3 -> 1 -> 2
